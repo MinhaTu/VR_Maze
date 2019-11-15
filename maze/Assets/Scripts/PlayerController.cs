@@ -19,20 +19,31 @@ public class PlayerController : MonoBehaviour {
         count = 0;
         SetCountText();
         winText.text = "";
+        Cursor.lockState = CursorLockMode.Locked;
     }
     // called before creating a frame
-    void Updtate(){
+  /*  void Updtate(){
+        float translation = Input.GetAxis("Vertical") * speed;
+        float straffe = Input.GetAxis("Horizontal") * speed;
+        translation *= Time.deltaTime;
+        straffe *= Time.deltaTime;
 
-    }
+        transform.Translate(straffe, 0, translation);
+
+        if (Input.GetKeyDown("escape")) {
+            Cursor.lockState = CursorLockMode.None; 
+        }
+    }*/
 
     // called before any physics calculation
     void FixedUpdate()  {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        Vector3 movement = new Vector3(0.0f, 0.0f, 1) * speed;
 
-        rb.AddForce(movement * speed);
+   
+        rb.AddRelativeForce(movement);
     }
 
     // called everytime we have a collision 
@@ -44,6 +55,11 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag("Particle")) {
+            transform.position = new Vector3(0, 0, 0);
+        }
+    }
     private void SetCountText(){
         countText.text = "Count: " + count.ToString();
         if (count >= amountCount) {

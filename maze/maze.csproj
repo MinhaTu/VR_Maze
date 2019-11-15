@@ -241,24 +241,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoSceneManager.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\HeadsetDemoManager.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\HelloVRManager.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\Log.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\ObjectController.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\KeyboardDemo\KeyboardDelegateExample.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\PermissionsDemo\PermissionsFlowManager.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\AppButtonInput.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\AutoPlayVideo.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\InputEvents.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\MenuHandler.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\PositionSwapper.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\ScrubberEvents.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\SwitchVideos.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\ToggleAction.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\VideoControlsManager.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\VideoPlayerReference.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudio.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudioListener.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudioRoom.cs" />
@@ -356,6 +338,24 @@
     <Compile Include="Assets\Scripts\Maze.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Scripts\Scripts\DemoInputManager.cs" />
+    <Compile Include="Assets\Scripts\Scripts\DemoSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Scripts\HelloVR\HeadsetDemoManager.cs" />
+    <Compile Include="Assets\Scripts\Scripts\HelloVR\HelloVRManager.cs" />
+    <Compile Include="Assets\Scripts\Scripts\HelloVR\Log.cs" />
+    <Compile Include="Assets\Scripts\Scripts\HelloVR\ObjectController.cs" />
+    <Compile Include="Assets\Scripts\Scripts\KeyboardDemo\KeyboardDelegateExample.cs" />
+    <Compile Include="Assets\Scripts\Scripts\PermissionsDemo\PermissionsFlowManager.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\AppButtonInput.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\AutoPlayVideo.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\InputEvents.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\MenuHandler.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\PositionSwapper.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\ScrubberEvents.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\SwitchVideos.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\ToggleAction.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\VideoControlsManager.cs" />
+    <Compile Include="Assets\Scripts\Scripts\VideoDemo\VideoPlayerReference.cs" />
     <Compile Include="Assets\Scripts\ThirdCameraController.cs" />
   </ItemGroup>
   <ItemGroup>

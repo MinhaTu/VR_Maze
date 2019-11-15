@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ailso/Documents/Unity/labyVR.apk
+C:/Users/ailso/Documents/Unity/final.apk
 SceneListBegin?
 Assets/_Scenes/minigame.unity
 SceneListEnd?
@@ -105,7 +105,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 65ccc5e6c5329a006e5b4f0effd4ff6c Assembly-CSharp.dll:.GvrScrollSettings
-68bfe834e5c64c262a93ad3517a24fbd Assembly-CSharp.dll:.Autowalk
+f9b4a5c2904afc4aade50bb6763c92d7 Assembly-CSharp.dll:.Autowalk
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:GoogleVR.Demos.DemoSceneManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -124,7 +124,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 36cd6f8d7e08dc2582ba6f6ba39df992 Assembly-CSharp.dll:GoogleVR.VideoDemo.SwitchVideos
 846f17d2b1fd8b405b1f43993d8e697d Assembly-CSharp.dll:.GvrKeyboard
-8271662dafbd412e7776b0e6ff8f4f45 Assembly-CSharp.dll:.DataController
+2962634c3955824827cee476efef4c1a Assembly-CSharp.dll:.DataController
 5adc88bf7d1c618314bc1a0f0b3d6c47 Assembly-CSharp.dll:.GvrAudioSoundfield
 bb0ad8cb9cb04ab265277fa3ffe5f4ff Assembly-CSharp.dll:GoogleVR.VideoDemo.ToggleAction
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker

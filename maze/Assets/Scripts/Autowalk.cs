@@ -23,11 +23,18 @@ How to get started with this script?:
 9. Start the scene and have fun! 
 */
 
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class Autowalk : MonoBehaviour
 {
+    private int count;
+    public static int amountCount;
+    public GameObject Transformation;
+    public Text countText;
+    public Text winText;
     private const int RIGHT_ANGLE = 90;
 
     // This variable determinates if the player will move or not 
@@ -37,7 +44,7 @@ public class Autowalk : MonoBehaviour
 
     //This is the variable for the player speed
     [Tooltip("With this speed the player will move.")]
-    public float speed;
+    public float speed = 4.0f;
 
     [Tooltip("Activate this checkbox if the player shall move when the Cardboard trigger is pulled.")]
     public bool walkWhenTriggered;
@@ -56,9 +63,14 @@ public class Autowalk : MonoBehaviour
     [Tooltip("This is the fixed y-coordinate.")]
     public float yOffset;
 
+    private Rigidbody rb;
     void Start()
     {
         mainCamera = Camera.main.transform;
+        rb = GetComponent<Rigidbody>();
+        count = amountCount;
+        SetCountText();
+        winText.text = "";
     }
 
     void Update()
@@ -106,8 +118,10 @@ public class Autowalk : MonoBehaviour
         if (isWalking)
         {
             Vector3 direction = new Vector3(mainCamera.transform.forward.x, 0, mainCamera.transform.forward.z).normalized * speed * Time.deltaTime;
+            //TIme.deltaTime;
             Quaternion rotation = Quaternion.Euler(new Vector3(0, -transform.rotation.eulerAngles.y, 0));
             transform.Translate(rotation * direction);
+         //   rb.AddRelativeForce(new Vector3(1, 0.0f, 0.0f) * speed);
         }
 
         if (freezeYPosition)
@@ -115,4 +129,31 @@ public class Autowalk : MonoBehaviour
             transform.position = new Vector3(transform.position.x, yOffset, transform.position.z);
         }
     }
+
+      private void SetCountText() {
+          countText.text = "Pieces left: " + count.ToString();
+          if (count < 1) {
+                winText.text = "YOU ARE COMPLETE!!";
+                Transformation.SetActive(true);
+          }
+      }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.CompareTag("Particle")) {
+
+            other.gameObject.SetActive(false);
+            count--;
+            SetCountText();
+        }
+    }
+
+   
+    public int getAmountCount() {
+        return amountCount;
+    }
+
+    public void setAmountCount(int value) {
+        amountCount = value;
+    }
+
 }

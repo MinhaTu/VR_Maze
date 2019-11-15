@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\ailso\Documents\Unity\maze\Temp\gradleOut\libs\unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="29.0.2"
+        sha1="6095d4c2e2c36b923f402d511292e4433c508f01">
+        <dex dex="C:\Users\ailso\Documents\Unity\maze\Temp\gradleOut\build\intermediates\pre-dexed\release\unity-classes_9d6632d7cc7424ae664b742e7cdd21f6175a3039.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ailso\Documents\Unity\maze\Temp\gradleOut\libs\libprotobuf-java-nano.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="29.0.2"
+        sha1="fcd53f117550c58490f29c2e27afca051626260d">
+        <dex dex="C:\Users\ailso\Documents\Unity\maze\Temp\gradleOut\build\intermediates\pre-dexed\release\libprotobuf-java-nano_eae22d93f753cfc0fc811114ddcfdbbaa2c1ba25.jar" />
+    </item>
+
+</items>
